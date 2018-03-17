@@ -1,10 +1,10 @@
-@mixin headerLine($width, $size) {
+@mixin headerLine($width, $size, $color) {
     font-size: $size;
     
     &::after {
         content: '';
         display: block;
-        border-bottom: 3px solid $border-line;
+        border-bottom: 3px solid $color;
         margin: 0 auto;
         margin-top: 1rem;
         width: $width;

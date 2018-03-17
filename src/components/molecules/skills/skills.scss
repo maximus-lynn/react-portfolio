@@ -28,7 +28,7 @@
     }
 
     &__heading {
-        @include headerLine(120px, $h1);
+        @include headerLine(120px, $h1, $border-line);
         display: inline-block;
         width: 50%;
     }

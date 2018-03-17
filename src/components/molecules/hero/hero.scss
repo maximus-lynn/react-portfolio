@@ -21,7 +21,7 @@
     }
 
     &__heading {
-        @include headerLine(120px, $h2);
+        @include headerLine(120px, $h2, $border-line);
         margin-top: 1rem;
     }
 

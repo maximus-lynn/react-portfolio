@@ -16,7 +16,7 @@ const Home = () => {
 
             <Hobbies></Hobbies>
 
-            {/* <PortfolioItem></PortfolioItem> */}
+            <PortfolioItem></PortfolioItem>
         </React.Fragment>
     );
 }
