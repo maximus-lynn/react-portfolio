@@ -15,15 +15,14 @@ class Navigation extends React.Component {
                 <ul className="navigation__list">
                     <li className="navigation__item">
                         <NavLink className="navigation__link"
-                              activeClassName="current"
-                              onClick={this.toggleMenu}
-                              to="/">
+                                 onClick={this.toggleMenu}
+                                 to="/"
+                                 exact>
                             HOME
                         </NavLink>
                     </li>
                     <li className="navigation__item">
                         <NavLink className="navigation__link"
-                              activeClassName="current"
                               onClick={this.toggleMenu}
                               to="/work">
                             WORK
