@@ -1,0 +1,9 @@
+@import '~assets/scss/settings/settings';
+
+.work {
+    &__heading {
+        @include headerLine(40px, $h1, $border-line);
+        text-align: center;
+        padding-top: 5rem;
+    }
+}
