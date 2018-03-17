@@ -1,0 +1,12 @@
+.image-block {
+    display: flex;
+
+    &__image {
+        flex: 1 0 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
