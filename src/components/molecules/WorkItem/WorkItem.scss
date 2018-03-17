@@ -1,6 +1,6 @@
 @import '~assets/scss/settings/settings';
 
-.portfolio {
+.work {
     @include breakpoint(medium) {
         display: flex;
     }
@@ -14,11 +14,11 @@
             flex: 1 1 auto;
 
             &:hover {
-                .portfolio__image {
+                .work__image {
                     transform: scale(1.05);
                 }
 
-                .portfolio__content {
+                .work__content {
                     opacity: 1;
                 }
             }    

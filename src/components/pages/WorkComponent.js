@@ -1,14 +1,14 @@
 import React from 'react';
 
-import PortfolioItem from '../molecules/portfolio-item/PortfolioItemComponent';
+import WorkItem from '../molecules/WorkItem/WorkItemComponent';
 import WorkHeading from '../atoms/WorkHeading/WorkHeadingComponent';
 
 const Work = () => {
     return (
         <React.Fragment>
             <WorkHeading></WorkHeading>
-            <PortfolioItem></PortfolioItem>
-            <PortfolioItem></PortfolioItem>
+            <WorkItem></WorkItem>
+            <WorkItem></WorkItem>
         </React.Fragment>
     );
 }
