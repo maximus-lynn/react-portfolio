@@ -29,7 +29,7 @@ class YtWork extends React.Component {
                 <WorkHero heroImage={hero} 
                         screenshot={screenshot}>
                 </WorkHero>
-
+                
                 <Intro title="Young Talent">
                     Hi there, Welcome to my portfolio. 
                     I am a Bath based web developer with 8 years experience in the industry, spread across digital agencies to SAAS companies. Below are the skills that I have learnt in my time:

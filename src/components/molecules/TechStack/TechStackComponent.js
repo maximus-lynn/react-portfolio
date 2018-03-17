@@ -14,11 +14,6 @@ class TechStack extends React.Component {
                                         <img className="tech-stack__image" src={stack} alt=""/>
                                    </li>
                         })}
-                        {this.props.techstack.map(function(stack) {
-                            return <li className="tech-stack__item" key={stack}>
-                                        <img className="tech-stack__image" src={stack} alt=""/>
-                                   </li>
-                        })}
                     </ul>
                 </div>
 

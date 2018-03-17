@@ -7,8 +7,11 @@ class Footer extends React.Component {
     }
 
     render() {
-        return (
-            <footer className="footer">
+        const location = window.location.pathname;
+        let mailMe;
+
+        if (location === '/') {
+            mailMe = (
                 <div className="footer__container">
                     <h4 className="footer__heading">
                         NEED A HAND? <br/>
@@ -24,6 +27,12 @@ class Footer extends React.Component {
                        <i className="icon icon-arrow-bottom-right"></i>
                     </a>
                 </div>
+            )
+        }
+
+        return (
+            <footer className="footer">
+                { mailMe }
                 <div className="footer__up"
                      onClick={this.scrollToTop}>
                     <i className="icon-arrow-up"></i>

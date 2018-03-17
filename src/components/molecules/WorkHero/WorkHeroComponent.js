@@ -9,6 +9,7 @@ class WorkHero extends React.Component {
 
               <div className="hero-work__screenshot">
                 <img src={this.props.screenshot} alt=""/>
+                <img src={this.props.screenshotMobile} alt="" className="hero-work__mobile"/>
               </div>
           </section>
         );
