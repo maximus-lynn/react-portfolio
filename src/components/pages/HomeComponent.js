@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../molecules/hero/HeroComponent';
 import Intro from '../molecules/intro/IntroComponent';
 import Skills from '../molecules/skills/SkillsComponent';
-import Hobbies from '../molecules/hobbies/HobbiesComponent';
+import Hobbies from '../molecules/Hobbies/HobbiesComponent';
 import PortfolioItem from '../molecules/portfolio-item/PortfolioItemComponent';
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
 
             <Skills></Skills>
 
-            {/* <Hobbies></Hobbies> */}
+            <Hobbies></Hobbies>
 
             {/* <PortfolioItem></PortfolioItem> */}
         </React.Fragment>

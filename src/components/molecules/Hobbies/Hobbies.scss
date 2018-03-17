@@ -1,0 +1,73 @@
+@import '~assets/scss/settings/settings';
+
+.hobbies {
+    @extend %containerRow;
+
+    @include breakpoint(medium) {
+        display: flex;
+        justify-content: space-between;
+
+        &__content,
+        &__visuials {
+            flex: 0 0 48%;
+        }
+    }
+
+    &__visuials {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+
+        @include breakpoint(smallOnly) {
+            margin-top: 2rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        box-sizing: border-box;
+        flex: 0 1 50%;
+
+        padding: 0 .625rem;
+        padding-bottom: 1.25rem;
+
+        &:nth-child(even) {
+            padding-right: 0;
+        }   
+
+        &:nth-child(odd) {
+            padding-left: 0;
+        }
+
+        @include breakpoint(medium) {
+            &:last-child {
+                .hobbies__icon {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0 auto;
+
+        color: $body-font-color-alt;
+        background-color: $card-icon-background;
+        padding: 1.5rem;
+        font-size: 3.5rem;
+
+        @include breakpoint(medium) { 
+            font-size: 5rem;
+        }
+    }
+
+    &__heading {
+        @include headerLeftLine($border-line);
+        margin: 0;
+    }
+}
