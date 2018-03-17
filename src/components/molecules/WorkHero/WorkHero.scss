@@ -1,0 +1,18 @@
+@import '~assets/scss/settings/settings';
+
+.hero-work {
+    position: relative;
+    margin-bottom: 4rem;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__screenshot {
+        @extend %absolute-center;
+
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+}

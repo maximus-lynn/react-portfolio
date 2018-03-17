@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component Image
-import avatar from './images/avatar.png';
+import avatar from './imgs/avatar.png';
 
 import './avatar.scss';
 

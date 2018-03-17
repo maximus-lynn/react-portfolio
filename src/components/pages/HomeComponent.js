@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../molecules/hero/HeroComponent';
-import Intro from '../molecules/intro/IntroComponent';
+import Intro from '../molecules/Intro/IntroComponent';
 import Skills from '../molecules/skills/SkillsComponent';
 import Hobbies from '../molecules/Hobbies/HobbiesComponent';
 import WorkItem from '../molecules/WorkItem/WorkItemComponent';

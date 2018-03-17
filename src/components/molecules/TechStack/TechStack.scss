@@ -1,0 +1,45 @@
+@import '~assets/scss/settings/settings.scss';
+
+.tech-stack {
+    background-image: url('~assets/imgs/grid.png');
+    background-color: $grid-bg;
+
+    &__container {
+        @extend %containerRow;
+        text-align: center;
+    }
+
+    &__heading {
+        @include headerLine(120px, $h1, $border-line);
+    }
+
+    &__list {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        padding: .625rem;
+        flex: 0 1 50%;
+
+        @include breakpoint(medium) {
+            flex: 0 1 33.3%;
+        }        
+        @include breakpoint(large) {
+            flex: 0 1 25%;
+        }
+
+
+    }
+    
+    &__image {
+        box-shadow: 0 0 5px -1px rgba($body-font-color, .75);
+        background-color: $card-background; 
+        padding: 1.5rem;
+        width: 100%;
+    }
+}
