@@ -5,6 +5,8 @@
 }
 
 html {
+    font-size: 85%;
+
     @include breakpoint(medium) {
         font-size: 86%;
     }

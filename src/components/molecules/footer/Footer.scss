@@ -1,0 +1,41 @@
+@import '~assets/scss/settings/settings.scss';
+
+.footer {
+    margin: 0;
+    background-image: url('~assets/imgs/grid.png');
+    background-color: $grid-bg;
+
+    &__container {
+        @extend %containerRow;
+        text-align: center;
+        
+        @include breakpoint(medium) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+    }
+
+    &__heading {
+        font-size: $h1;
+    }
+
+    &__button {
+        @extend %button;
+
+        @include breakpoint(smallOnly) {
+            margin-top: .5rem;
+            display: inline-block;
+        }        
+    }
+
+    &__up {
+        cursor: pointer;
+        padding: 2rem 0;
+        font-size: 2rem;
+        text-align: center;
+        background-color: $card-background;
+        color: $button-icon;
+    }
+}

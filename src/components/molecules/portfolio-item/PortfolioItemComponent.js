@@ -21,7 +21,7 @@ const PortfolioItem = () => {
                 <img src={macgregor} className="portfolio__image" alt=""/>
                 <header className="portfolio__content">
                     <div className="portfolio__heading">
-                        <h1 className="portfolio__title">MACGREGOR SMITH</h1>
+                        <h1 className="portfolio__title">MACGREGOR <br /> SMITH</h1>
                         <h6 className="portfolio__subtitle">LANDSCAPE ARCHITECTURE</h6>
                     </div>
                 </header>
@@ -31,7 +31,7 @@ const PortfolioItem = () => {
                 <header className="portfolio__content">
                     <div className="portfolio__heading">
                         <h1 className="portfolio__title">CONTROLTECH</h1>
-                        <h6 className="portfolio__subtitle">BIKE PRODUCERS</h6>
+                        <h6 className="portfolio__subtitle">BIKE RETAILER</h6>
                     </div>
                 </header>
             </article>                        

@@ -36,3 +36,69 @@
         padding: 5.625rem 1.5rem;
     }
 }
+
+// Button 
+%button {
+    position: relative;
+    padding: 2rem 3.125rem;
+    text-decoration: none;
+    color: $button-color;
+    
+    font-family: $button-font-family;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-size: $h1;
+
+    .icon {
+        position: absolute;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+        transition: all .25s;
+    }
+
+    .icon-arrow-top-left {
+        top: 0;
+        left: 0;
+    }
+
+    .icon-arrow-top-right {
+        top: 0;
+        right: 0;
+    }
+
+    .icon-arrow-bottom-left {
+        bottom: 0;
+        left: 0;
+    }
+
+    .icon-arrow-bottom-right {
+        bottom: 0;
+        right: 0;
+    }  
+
+    &:hover {
+        .icon-arrow-top-left {
+            margin-top: -3px;
+            margin-left: -3px;
+        }
+    
+        .icon-arrow-top-right {
+            margin-top: -3px;
+            margin-right: -3px;
+        }
+    
+        .icon-arrow-bottom-left {
+            margin-bottom: -3px;
+            margin-left: -3px;
+        }
+    
+        .icon-arrow-bottom-right {
+            margin-bottom: -3px;
+            margin-right: -3px;
+        } 
+    }
+}
