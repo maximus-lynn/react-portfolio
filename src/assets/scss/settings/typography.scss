@@ -1,5 +1,9 @@
 @import 'settings';
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     @include breakpoint(medium) {
         font-size: 86%;
@@ -10,7 +14,6 @@ html {
     }
 }
 
-
 body {
     font-family: $body-font-family;
     color: $body-font-color;
@@ -20,7 +23,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     font-family: $header-font-family;
     text-transform: uppercase;
     letter-spacing: 6px;
