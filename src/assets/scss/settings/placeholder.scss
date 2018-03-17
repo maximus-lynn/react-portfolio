@@ -1,0 +1,38 @@
+@import 'variables.scss';
+@import 'mixins';
+
+// Positioning
+%absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Background sizing
+%background-cover { 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// Heading line
+%headerLine {
+    &::after {
+        content: '';
+        display: inline-block;
+        border-bottom: 3px solid $border-line;
+        width: 30%;
+    }
+}
+
+// Container row
+%containerRow {
+    padding: 3rem 1.5rem;
+    margin: 0 auto;
+    max-width: 52rem;
+
+    @include breakpoint(medium) {
+        padding: 5.625rem 1rem;
+    }
+}

@@ -1,0 +1,47 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Lato');
+
+
+// Colours
+$light-grey: #f7f7f7;
+$dark-grey: #414141;
+$white: #fff;
+
+// Foreground
+$orange: #e26e3c;
+$red: #d43e42;
+$yellow: #f4dc5d;
+$blue: #6682b6;
+
+// Typography
+$body-font-color: $dark-grey;
+$body-font-color-alt: $white;
+$body-font-family: 'Lato', sans-serif;
+
+    // Headings
+    $header-font-family: 'Francois One', sans-serif;
+    $h1: 2.375rem; // 38px
+    $h2: 1.625rem; // 26px
+    $h3: 1.5rem; // 24px
+    $h4: 1.125rem; // 18px
+
+    // Paragraph
+    $large-para: 1.125rem;
+
+    $border-line: $orange;
+    $border-line-alt: $white;
+    $icon-color: $orange;
+    $icon-color-alt: $white;
+
+    // Hamburger
+    $hamburger-background: $orange;
+    $hamburger-active-background: $body-font-color;
+
+    // Navigation
+    $navigation-background: $white;
+
+    // Grid
+    $grid-bg: $light-grey;
+
+    // Card
+    $card-background: $white;

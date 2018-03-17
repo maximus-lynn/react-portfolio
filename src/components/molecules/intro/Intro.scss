@@ -1,0 +1,18 @@
+@import '~assets/scss/settings/settings';
+
+.intro {
+    @extend %containerRow;
+    text-align: center;
+
+    @include breakpoint(medium) {
+        padding-bottom: 8.15rem;
+    }
+
+    &__heading {
+        @include headerLine(75px, $h2);
+    }
+
+    &__para {
+        font-size: $large-para;
+    }
+}

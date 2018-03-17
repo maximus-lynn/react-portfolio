@@ -1,0 +1,120 @@
+@import '~assets/scss/settings/settings.scss';
+
+.skills {
+    background-image: url('~assets/imgs/grid.png');
+    background-color: $grid-bg;
+
+    @include breakpoint(medium) {
+        padding: 3.75rem 1rem;
+    }
+
+    &__container {
+        @extend %containerRow;
+
+        @include breakpoint(medium) {
+            margin-top: -13rem;
+        }
+    }
+
+    &__title {
+        text-align: center;
+
+        @include breakpoint(medium) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__heading {
+        @include headerLine(120px, $h1);
+        display: inline-block;
+        width: 50%;
+    }
+
+    @include breakpoint(medium) {
+        &__content {
+            margin-top: -8rem;
+        }
+    }
+
+    &__article {
+        display: flex;
+        color: $body-font-color-alt;
+
+        @include breakpoint(smallOnly) {
+            flex-direction: column;
+        }
+
+        @include breakpoint(medium) {
+            &:nth-child(odd) {
+                flex-direction: row-reverse;
+            }
+
+            &:first-child {
+                .skills__image {
+                    align-self: flex-end;
+                    
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+    
+            &:last-child .skills__image {
+                align-self: flex-start;
+            }               
+        }
+
+        &.alt {
+            color: $body-font-color;
+        }
+    }
+
+    &__desc {
+        padding: 2.5rem 1.875rem;
+        background-color: $orange;
+
+        @include breakpoint(medium) {
+            flex: 1 1 50%;
+        }
+
+        // Modifiers 
+        &--frameworks {
+            background-color: $red;
+        }
+
+        &--javascript {
+            background-color: $yellow;
+        }     
+
+        &--php {
+            background-color: $blue;
+        }
+    }
+
+    &__header {
+        @include headerLeftLine($body-font-color-alt);
+        margin: 0;
+
+        &.alt::before {
+            border-color: $body-font-color;
+        }
+    }
+
+    &__image {
+        background-color: $card-background;
+        padding: 1.875rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint(medium) {
+            flex: 1 1 50%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@mixin headerLine($width, $size) {
+    font-size: $size;
+    
+    &::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid $border-line;
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: $width;
+    }
+}
+
+@mixin headerLeftLine($color) {
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        border-bottom: 3px solid $color;
+        width: 30px;
+        margin-right: 1rem;
+    }
+}
+
+// Breakpoint mixing
+@mixin breakpoint($point) {
+    @if $point == xxlarge {
+        @media (min-width: 1440px) { @content ; }
+    }
+    @else if $point == xlarge {
+        @media (min-width: 1200px) { @content ; }
+    }
+    @else if $point == large {
+        @media (min-width: 1024px)  { @content ; }
+    }
+    @else if $point == medium {
+        @media (min-width: 680px)  { @content ; }
+    }
+    @else if $point == smallOnly {
+        @media (max-width: 679px)  { @content ; }
+    }    
+}
