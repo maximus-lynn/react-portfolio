@@ -4,10 +4,6 @@ import { NavLink } from 'react-router-dom';
 import './Navigation.scss';
 
 class Navigation extends React.Component {
-    constructor(props) {
-        super(props)
-        this.navItem = document.querySelector('.navigation__item');
-    }
 
     moveBall(event) {
         const item = document.querySelectorAll('.navigation__item');
@@ -26,13 +22,21 @@ class Navigation extends React.Component {
         document.querySelector('.navigation__ball').style.left = ballPosition + '%';
     }
 
+
+    activeBall() {
+        document.querySelector('.navigation__ball').style.left = null;
+    }
+
     toggleMenu() {
         document.querySelector('.hamburger').classList.toggle('open');
         document.querySelector('.navigation').classList.toggle('open');
     }
 
     render() {
-        // this.moveBall(this.props.navItem);
+        window.addEventListener('load', () => {
+            const activeState = document.querySelector('.navigation__item .active')
+            this.moveBall(activeState)
+        });
 
         return (
             <nav className="navigation">
@@ -40,6 +44,7 @@ class Navigation extends React.Component {
                     <li className="navigation__item">
                         <NavLink className="navigation__link"
                                  onMouseOver={(event) => { this.moveBall(event) }}
+                                 onMouseOut={this.activeBall}
                                  onClick={this.toggleMenu}
                                  to="/"
                                  exact>
@@ -49,6 +54,7 @@ class Navigation extends React.Component {
                     <li className="navigation__item">
                         <NavLink className="navigation__link"
                                  onMouseOver={(event) => { this.moveBall(event) }}
+                                 onMouseOut={this.activeBall}
                                  onClick={this.toggleMenu}
                                  to="/work">
                             WORK
