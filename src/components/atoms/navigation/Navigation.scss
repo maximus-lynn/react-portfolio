@@ -33,6 +33,25 @@
         }
     }
 
+    &__ball {
+        width: 10px; 
+        height: 10px; 
+        border-radius: 50%; 
+        background-color: $ball-background;
+        display: inline-block;
+
+        position: absolute;
+        left: 25%;
+        transform: translateX(-25%);
+        transition: all .5s;
+
+        &-container {
+            position: absolute;
+            top: calc(100% + 1rem);
+            width: calc(100% - 10px);
+        }
+    }
+
     &__link {
         font-size: $h1;
         font-family: $header-font-family;
@@ -44,10 +63,6 @@
 
         @include breakpoint(medium) {
             padding: 0 5rem;           
-        }
-
-        &.active {
-            text-decoration: underline;
         }
     }
 }
