@@ -41,15 +41,16 @@ class YtWork extends React.Component {
                 </WorkHero>
                 
                 <Intro title="Young Talent">
-                    Hi there, Welcome to my portfolio. 
-                    I am a Bath based web developer with 8 years experience in the industry, spread across digital agencies to SAAS companies. Below are the skills that I have learnt in my time:
+                    <p>YT Industries asked Shift Active Media the company that I am working for currently to build them a microsite to promote the release of their new website.</p>
+                    <p>When we found out that YT stands for Young Talent our team decided to play on this by showing extreme examples of peoples young talent. This ranged from a Sister Nun who entered Ironman to Office MMA fighters.</p>
                 </Intro>
 
                 <TechStack techstack={this.stacks}></TechStack>
 
-                <Intro title="Typography">
-                    Hi there, Welcome to my portfolio. 
-                    I am a Bath based web developer with 8 years experience in the industry, spread across digital agencies to SAAS companies. Below are the skills that I have learnt in my time:
+                <Intro title="Site Construction">
+                    <p>As the lead front end developer on the project I was given the challenge to bring this beast to life. </p>
+                    <p>We knew we wanted large facials of the talented people with a before and after state activated by hover events. It turned out to be quite a complex reveal and I was very proud to have done it using just CSS and HTML.</p>
+                    <p>As well as the front end work I also hooked this into Wordpress using Custom Advanced Fields, making the whole website content manageable. Lastly the website was too small for a CSS framework so everything was coded from scratch.</p>
                 </Intro>    
 
                 <ImageBlock image1={image1}
