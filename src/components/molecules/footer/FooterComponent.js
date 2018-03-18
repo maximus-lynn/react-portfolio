@@ -1,5 +1,8 @@
 import React from 'react';
+import { withRouter } from 'react-router';
+
 import './Footer.scss';
+
 
 class Footer extends React.Component {
     scrollToTop() {
@@ -7,9 +10,9 @@ class Footer extends React.Component {
     }
 
     render() {
-        const location = window.location.pathname;
+        const location = this.props.location.pathname;
         let mailMe;
-
+        
         if (location === '/') {
             mailMe = (
                 <div className="footer__container">
@@ -42,4 +45,4 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer;
+export default withRouter(Footer);

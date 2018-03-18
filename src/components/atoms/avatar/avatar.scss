@@ -1,5 +1,28 @@
+@import '~assets/scss/settings/settings';
+
 .avatar {
-    background-color: #ffffff;
+    background-color: $avatar-background;
     border-radius: 50%;
-    border: 3px solid #414141;
+    border: 3px solid $avatar-border;
+
+    &--header {
+        width: 50px;
+
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+
+        .avatar {
+            border: 1px solid $avatar-border;
+            box-shadow: 0 0 5px -1px rgba($body-font-color, .75);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @include breakpoint(smallOnly) {
+            display: none;
+        }
+    }
 }

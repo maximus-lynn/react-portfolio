@@ -4,6 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 
+
 import './App.scss';
 
 // Components
@@ -32,9 +33,10 @@ class App extends Component {
                 <Route path="/macgregor-smith" component={Yt} />
                 <Route path="/control-tech" component={Yt} />
               </main>
+              
+              <Footer></Footer> 
             </React.Fragment>
           </Router> 
-          <Footer></Footer> 
       </React.Fragment>
     );
   }

@@ -24,6 +24,13 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+
+
+
+.icon-back-arrow::before {
+    content: "\e90c";
+}
+
 .icon-carrot::before {
     content: "\e909";
 }
@@ -64,11 +71,15 @@
     content: "\e901";
 }
 
-.icon-beer::before {
-    content: "\e902";
-}
-
 .icon-bike::before {
     content: "\e903";
 }
 
+.icon-beer::before {
+    content: "\e902";
+}
+
+  .icon-bike::before {
+    content: "\e903";
+  }
+  
