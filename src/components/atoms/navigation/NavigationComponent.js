@@ -5,6 +5,12 @@ import './Navigation.scss';
 
 class Navigation extends React.Component {
 
+    constructor (props) {
+        super(props)
+        this.moveBall = this.moveBall.bind(this);
+        this.activeBall = this.activeBall.bind(this);
+    }
+
     moveBall(event) {
         const item = document.querySelectorAll('.navigation__item');
         const length = item.length;
@@ -22,9 +28,9 @@ class Navigation extends React.Component {
         document.querySelector('.navigation__ball').style.left = ballPosition + '%';
     }
 
-
     activeBall() {
-        document.querySelector('.navigation__ball').style.left = null;
+        const activeState =  document.querySelector('.navigation__item .active');
+        this.moveBall(activeState);
     }
 
     toggleMenu() {
@@ -32,12 +38,12 @@ class Navigation extends React.Component {
         document.querySelector('.navigation').classList.toggle('open');
     }
 
-    render() {
-        window.addEventListener('load', () => {
-            const activeState = document.querySelector('.navigation__item .active')
-            this.moveBall(activeState)
-        });
+    componentDidMount() {
+        const activeState =  document.querySelector('.navigation__item .active');
+        this.moveBall(activeState);
+    }
 
+    render() {
         return (
             <nav className="navigation">
                 <ul className="navigation__list">
