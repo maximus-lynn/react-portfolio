@@ -4,6 +4,5 @@
     &__heading {
         @include headerLine(40px, $h1, $border-line);
         text-align: center;
-        padding-top: 5rem;
     }
 }

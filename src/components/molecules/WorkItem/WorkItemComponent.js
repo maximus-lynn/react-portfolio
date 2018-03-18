@@ -14,7 +14,7 @@ const WorkItem = () => {
                 <NavLink to="/young-talent">
                     <img src={yt} className="work__image" alt=""/>
                     <header className="work__content">
-                        <div className="work__heading">
+                        <div className="work__header">
                             <h1 className="work__title">YOUNG TALENT</h1>
                             <h6 className="work__subtitle">YT INDUSTRIES</h6>
                         </div>
@@ -25,7 +25,7 @@ const WorkItem = () => {
                 <NavLink to="/macgregor-smith">
                     <img src={macgregor} className="work__image" alt=""/>
                     <header className="work__content">
-                        <div className="work__heading">
+                        <div className="work__header">
                             <h1 className="work__title">MACGREGOR <br /> SMITH</h1>
                             <h6 className="work__subtitle">LANDSCAPE ARCHITECTURE</h6>
                         </div>
@@ -36,7 +36,7 @@ const WorkItem = () => {
                 <NavLink to="/control-tech">
                     <img src={controltech} className="work__image" alt=""/>
                     <header className="work__content">
-                        <div className="work__heading">
+                        <div className="work__header">
                             <h1 className="work__title">CONTROLTECH</h1>
                             <h6 className="work__subtitle">BIKE RETAILER</h6>
                         </div>
