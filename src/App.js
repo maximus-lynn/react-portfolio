@@ -27,9 +27,9 @@ class App extends Component {
               <Header></Header>
 
               <main>
-                <Route path="/" exact={true} component={Home} />
-                <Route path="/work" component={Work} />
-                <Route path="/young-talent" component={Yt} />
+                <Route path="/" exact component={Home} />
+                <Route path="/work" exact component={Work} />
+                <Route path="/work/young-talent" component={Yt} />
                 <Route path="/macgregor-smith" component={Yt} />
                 <Route path="/control-tech" component={Yt} />
               </main>

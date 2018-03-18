@@ -11,7 +11,7 @@ const WorkItem = () => {
     return (
         <section className="work">
             <article className="work__item">
-                <NavLink to="/young-talent"
+                <NavLink to="work/young-talent"
                          className="work__link">
                     <img src={yt} className="work__image" alt=""/>
                     <header className="work__content">
@@ -23,7 +23,7 @@ const WorkItem = () => {
                 </NavLink>
             </article>
             <article className="work__item">
-                <NavLink to="/macgregor-smith"
+                <NavLink to="work/macgregor-smith"
                          className="work__link">
                     <img src={macgregor} className="work__image" alt=""/>
                     <header className="work__content">
@@ -35,7 +35,7 @@ const WorkItem = () => {
                 </NavLink>
             </article>
             <article className="work__item">
-                <NavLink to="/control-tech"
+                <NavLink to="work/control-tech"
                          className="work__link">
                     <img src={controltech} className="work__image" alt=""/>
                     <header className="work__content">

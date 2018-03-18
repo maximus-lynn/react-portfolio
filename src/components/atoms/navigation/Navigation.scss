@@ -21,10 +21,16 @@
     &__list {
         @extend %absolute-center;
         list-style: none;
+        padding: 0;
+        text-align: center;
     }
 
     &__item {
-        display: inline-block;
+        display: block;
+
+        @include breakpoint(medium) {
+            display: inline-block;
+        }
     }
 
     &__link {
@@ -34,7 +40,11 @@
         color: $body-font-color;
         text-decoration: none;
 
-        padding: 0 5rem;
+        padding: 2.5rem 1rem;
+
+        @include breakpoint(medium) {
+            padding: 0 5rem;           
+        }
 
         &.active {
             text-decoration: underline;
