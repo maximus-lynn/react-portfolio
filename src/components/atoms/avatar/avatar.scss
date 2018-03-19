@@ -12,6 +12,8 @@
         top: 2rem;
         left: 2rem;
 
+        z-index: 1;
+
         .avatar {
             border: 1px solid $avatar-border;
             box-shadow: 0 0 5px -1px rgba($body-font-color, .75);

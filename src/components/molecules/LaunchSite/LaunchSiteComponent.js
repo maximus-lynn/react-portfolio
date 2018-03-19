@@ -11,7 +11,7 @@ class LaunchSite extends React.Component {
                     <a className="launch__button"
                        target="_blank"
                        rel="noopener noreferrer"
-                       href="http://findyouryoungtalent.com">
+                       href={this.props.link}>
                         LAUNCH SITE
         
                         <i className="icon icon-arrow-top-left"></i>

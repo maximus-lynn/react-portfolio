@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './WorkItem.scss';
 
 import yt from './imgs/yt.jpg';
-import macgregor from './imgs/macgreg.jpg';
+import playsports from './imgs/playsport.jpg';
 import controltech from './imgs/controltech.jpg';
 
 const WorkItem = () => {
@@ -23,19 +23,19 @@ const WorkItem = () => {
                 </NavLink>
             </article>
             <article className="work__item">
-                <NavLink to="work/macgregor-smith"
+                <NavLink to="work/play-sports-network"
                          className="work__link">
-                    <img src={macgregor} className="work__image" alt=""/>
+                    <img src={playsports} className="work__image" alt=""/>
                     <header className="work__content">
                         <div className="work__header">
-                            <h1 className="work__title">MACGREGOR <br /> SMITH</h1>
-                            <h6 className="work__subtitle">LANDSCAPE ARCHITECTURE</h6>
+                            <h1 className="work__title">PLAYSPORTS <br/> NETWORK</h1>
+                            <h6 className="work__subtitle">CYCLING SPORTS MEDIA</h6>
                         </div>
                     </header>
                 </NavLink>
             </article>
             <article className="work__item">
-                <NavLink to="work/control-tech"
+                <NavLink to="work/power2max"
                          className="work__link">
                     <img src={controltech} className="work__image" alt=""/>
                     <header className="work__content">

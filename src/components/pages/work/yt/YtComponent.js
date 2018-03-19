@@ -11,10 +11,10 @@ import LaunchSite from '../../../molecules/LaunchSite/LaunchSiteComponent';
 
 // Hero
 import hero from './imgs/hero.jpg';
-import screenshot from './imgs/yt-macbook.png';
+import screenshot from './imgs/macbook.png';
 
 // Tech Stack 
-import html from './imgs/html.jpg'; 
+import html from './imgs/html.jpg';  
 import css from './imgs/css.jpg'; 
 import wordpress from './imgs/wordpress.jpg'; 
 import js from './imgs/js.jpg'; 
@@ -27,7 +27,7 @@ import image2 from './imgs/image-two.jpg';
 import devices from './imgs/devices.png'
 
 
-class YtWork extends React.Component {
+class YoungTalent extends React.Component {
     constructor(props) {
         super(props);
         this.stacks = [html, css, wordpress, js]
@@ -57,10 +57,12 @@ class YtWork extends React.Component {
                             image2={image2}>
                 </ImageBlock>  
 
-                <LaunchSite devices={devices}></LaunchSite>      
+                <LaunchSite devices={devices}
+                            link="http://findyouryoungtalent.com">
+                </LaunchSite>      
             </React.Fragment>
         );
     }
 }
 
-export default YtWork;
+export default YoungTalent;

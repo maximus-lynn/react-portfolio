@@ -49,6 +49,10 @@
             position: absolute;
             top: calc(100% + 1rem);
             width: calc(100% - 10px);
+
+            @include breakpoint(smallOnly) {
+                display: none;
+            }            
         }
     }
 

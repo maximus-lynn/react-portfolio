@@ -8,7 +8,6 @@ const Work = () => {
         <React.Fragment>
             <WorkHeading></WorkHeading>
             <WorkItem></WorkItem>
-            <WorkItem></WorkItem>
         </React.Fragment>
     );
 }
