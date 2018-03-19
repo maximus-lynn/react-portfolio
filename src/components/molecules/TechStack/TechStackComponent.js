@@ -1,5 +1,5 @@
 import React from 'react';
-import './TechStack.scss';
+import './TechStack.css';
 
 class TechStack extends React.Component {
     render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './hamburger.scss';
+import './hamburger.css';
 
 class Hamburger extends React.Component{
     toggleMenu() {

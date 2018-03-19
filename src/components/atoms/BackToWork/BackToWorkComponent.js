@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './BackToWork.scss';
+import './BackToWork.css';
 
 class BackToWork extends React.Component{
     render() {

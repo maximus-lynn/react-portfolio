@@ -1,5 +1,5 @@
 import React from 'react';
-import './LaunchSite.scss';
+import './LaunchSite.css';
 
 class LaunchSite extends React.Component {
     render() {

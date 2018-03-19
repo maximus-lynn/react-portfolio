@@ -1,5 +1,5 @@
 import React from 'react';
-import './WorkHero.scss';
+import './WorkHero.css';
 
 class WorkHero extends React.Component {
     render() {

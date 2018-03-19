@@ -212,16 +212,27 @@ module.exports = {
             ),
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
           },
-          {
-            test: /\.scss$/,
-            use: [{
-                loader: "style-loader"
-            }, {
-                loader: "css-loader"
-            }, {
-                loader: "sass-loader"
-            }]
-          },
+          // {
+          //   test: /\.scss$/,
+          //   use: ExtractTextPlugin.extract({
+          //     fallback: 'style',
+          //     use: [
+          //       'css?minifier',
+          //       'group-css-media-queries',
+          //       'sass'
+          //     ]
+          //   })
+          // },          
+          // {
+          //   test: /\.scss$/,
+          //   use: [{
+          //       loader: require.resolve("style-loader")
+          //   }, {
+          //       loader: require.resolve("css-loader")
+          //   }, {
+          //       loader: require.resolve("sass-loader")
+          //   }]
+          // },
           {
             test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
             loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]'

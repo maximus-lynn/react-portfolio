@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 
 
-import './App.scss';
+import './App.css';
 
 // Components
 import Home from './components/pages/HomeComponent';

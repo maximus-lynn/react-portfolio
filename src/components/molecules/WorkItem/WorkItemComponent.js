@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './WorkItem.scss';
+import './WorkItem.css';
 
 import yt from './imgs/yt.jpg';
 import playsports from './imgs/playsport.jpg';

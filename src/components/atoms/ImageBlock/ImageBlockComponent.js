@@ -1,5 +1,5 @@
 import React from 'react';
-import './ImageBlock.scss';
+import './ImageBlock.css';
 
 class ImageBlock extends React.Component{
     render() {

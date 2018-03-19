@@ -1,5 +1,5 @@
 import React from 'react';
-import './Intro.scss';
+import './Intro.css';
 
 class Intro extends React.Component {
     render() {

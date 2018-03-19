@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hobbies.scss';
+import './Hobbies.css';
 
 const Hobbies = () => {
     return (

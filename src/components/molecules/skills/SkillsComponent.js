@@ -7,7 +7,7 @@ import htmlCss from './imgs/html-css.jpg';
 import php from './imgs/php.jpg'; 
 import others from './imgs/others.jpg'; 
 
-import './skills.scss';
+import './skills.css';
 
 const Skills = () => {
     return (

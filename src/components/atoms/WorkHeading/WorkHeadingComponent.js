@@ -1,5 +1,5 @@
 import React from 'react';
-import './WorkHeading.scss';
+import './WorkHeading.css';
 
 const WorkHeading = () => {
     return (

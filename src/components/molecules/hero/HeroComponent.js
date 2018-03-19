@@ -3,7 +3,7 @@ import React from 'react';
 // Comnponents
 import Avatar from '../../atoms/avatar/AvatarComponent';
 import Scroll from '../../atoms/scroll/ScrollComponent';
-import './hero.scss';
+import './hero.css';
 
 const Hero = () => {
     return (

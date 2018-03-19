@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 // Component Image
 import avatarImg from './imgs/avatar.png';
 
-import './avatar.scss';
+import './avatar.css';
 
 class Avatar extends React.Component {
     render() {
