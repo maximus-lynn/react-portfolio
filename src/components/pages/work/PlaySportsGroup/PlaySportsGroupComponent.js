@@ -35,6 +35,10 @@ class PlaySportsGroup extends React.Component {
         this.stacks = [html, css, wordpress, js, php, angular]
     }
 
+    componentWillMount() {
+        document.title = 'Maxwell Lynn - Playsports Network'
+    }    
+
     render() {
         return (
             <React.Fragment>

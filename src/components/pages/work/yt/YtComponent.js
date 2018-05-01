@@ -14,10 +14,10 @@ import hero from './imgs/hero.jpg';
 import screenshot from './imgs/macbook.png';
 
 // Tech Stack 
-import html from './imgs/html.jpg';  
-import css from './imgs/css.jpg'; 
-import wordpress from './imgs/wordpress.jpg'; 
-import js from './imgs/js.jpg'; 
+import html from '../../../../assets/imgs/html.jpg';  
+import css from '../../../../assets/imgs/css.jpg'; 
+import wordpress from '../../../../assets/imgs/wordpress.jpg'; 
+import js from '../../../../assets/imgs/js.jpg'; 
 
 // Image Block
 import image1 from './imgs/image-one.jpg';
@@ -32,7 +32,9 @@ class YoungTalent extends React.Component {
         super(props);
         this.stacks = [html, css, wordpress, js]
     }
-
+    componentWillMount() {
+        document.title = 'Maxwell Lynn - Young Talent'
+    }    
     render() {
         return (
             <React.Fragment>
@@ -57,9 +59,11 @@ class YoungTalent extends React.Component {
                             image2={image2}>
                 </ImageBlock>  
 
+                {/*
                 <LaunchSite devices={devices}
                             link="http://findyouryoungtalent.com">
-                </LaunchSite>      
+                </LaunchSite>       
+                */}
             </React.Fragment>
         );
     }

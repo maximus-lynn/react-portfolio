@@ -1,0 +1,11 @@
+.nav__indicator {
+	position: absolute;
+	bottom: -15px;
+	width: 10px;
+	height: 10px;
+	margin-left: -5px;
+	border-radius: 50%;
+	background: #444;
+	display: block;
+	transition: transform 0.5s;
+}

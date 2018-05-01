@@ -5,7 +5,7 @@ import './WorkItem.css';
 
 import yt from './imgs/yt.jpg';
 import playsports from './imgs/playsport.jpg';
-import controltech from './imgs/controltech.jpg';
+import power2max from './imgs/power2max.jpg';
 
 const WorkItem = () => {
     return (
@@ -37,11 +37,11 @@ const WorkItem = () => {
             <article className="work__item">
                 <NavLink to="work/power2max"
                          className="work__link">
-                    <img src={controltech} className="work__image" alt=""/>
+                    <img src={power2max} className="work__image" alt=""/>
                     <header className="work__content">
                         <div className="work__header">
-                            <h1 className="work__title">CONTROLTECH</h1>
-                            <h6 className="work__subtitle">BIKE RETAILER</h6>
+                            <h1 className="work__title">POWER2MAX</h1>
+                            <h6 className="work__subtitle">POWERMETER RETAILER</h6>
                         </div>
                     </header>
                 </NavLink>

@@ -45,7 +45,7 @@
 
         @include breakpoint(smallOnly) {
             flex-direction: column;
-            margin: 1rem;
+            margin: 3rem;
         }
 
         @include breakpoint(medium) {

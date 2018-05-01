@@ -34,6 +34,10 @@ class Power2Max extends React.Component {
         super(props);
         this.stacks = [html, css, wordpress, js, php, woo]
     }
+    
+    componentWillMount() {
+        document.title = 'Maxwell Lynn - Power2max'
+    }    
 
     render() {
         return (
@@ -45,16 +49,17 @@ class Power2Max extends React.Component {
                 <Intro title="Power 2 MAx">
                     <p>
                         Power 2 max are creators of a very useful training tool for cycling called a powermeter. 
-                        It enables you to see how much power you are outputting whilst cycling.
-                    </p>                
+                        It enables you to see how much power you are outputting whilst cycling. As a cyclist myself I was very interested in this project. 
+                    </p>              
+                    <p>I did all of the Front end development and the majority of the PHP to hook up to the CMS, Wordpress for Shift Active Media.</p>  
                 </Intro>
 
                 <TechStack techstack={this.stacks}></TechStack>
 
                 <Intro title="Site Construction">
-                    <p>Power 2 Max was put together </p>
-                    <p>Working here gave the chance to expand my knowledge of Typescript, Angular 2 and Webpack, building internal tools for secret projects.</p>
-                    <p>The Youtube channels all have online shops that have been built in Magento giving me more chance to expand my knowledge of PHP</p>
+                    <p>Power 2 Max was put together using Wordpress and Woocommerce. Woocommerce is something that I haven't had any experience with and although simple to learn I believe that they can do a lot to improve their plugin.</p>
+                    <p>There was a lot of challenges with this build as their product relied on many variations of accessories to be built with it, this was a nice test for my Javascript skills</p>
+                    <p>The branding was already a bright green which again gave us challenges with accessibility with certain foregrounds and backgrounds. In my opinion I think we pulled it off nicely</p>
                 </Intro>    
 
                 <ImageBlock image1={image1}

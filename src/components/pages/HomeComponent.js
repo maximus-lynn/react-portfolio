@@ -5,23 +5,29 @@ import Skills from '../molecules/skills/SkillsComponent';
 import Hobbies from '../molecules/Hobbies/HobbiesComponent';
 import WorkItem from '../molecules/WorkItem/WorkItemComponent';
 
-const Home = () => {
-    return (
-        <React.Fragment>
-            <Hero></Hero>
+class Home extends React.Component {
+    componentWillMount() {
+        document.title = 'Maxwell Lynn - Home'
+    }    
+    
+    render() {
+        return (
+            <React.Fragment>
+                <Hero></Hero>
 
-            <Intro title="About me">
-                Hi there, Welcome to my portfolio. <br/>
-                I am a Bath based web developer with 8 years experience in the industry, spread across digital agencies to SAAS companies. Below are the skills that I have learnt in my time:
-            </Intro>
+                <Intro title="About me">
+                    Hi there, Welcome to my portfolio. <br/>
+                    I am a Bath based web developer with 8 years experience in the industry, spread across digital agencies to SAAS companies. Below are the skills that I have learnt in my time:
+                </Intro>
 
-            <Skills></Skills>
+                <Skills></Skills>
 
-            <Hobbies></Hobbies>
+                <Hobbies></Hobbies>
 
-            <WorkItem></WorkItem>
-        </React.Fragment>
-    );
+                <WorkItem></WorkItem>
+            </React.Fragment>
+        );
+    }
 }
 
 export default Home;

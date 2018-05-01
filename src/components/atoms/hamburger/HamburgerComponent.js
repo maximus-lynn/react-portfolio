@@ -2,16 +2,14 @@ import React from 'react';
 
 import './hamburger.css';
 
-class Hamburger extends React.Component{
-    toggleMenu() {
-        document.querySelector('.hamburger').classList.toggle('open');
-        document.querySelector('.navigation').classList.toggle('open');
-    }
+class Hamburger extends React.Component {
 
     render() {
+        let open = this.props.open ? 'open' : '';
+
         return (
-            <div className="hamburger"
-                 onClick={this.toggleMenu}>
+            <div className={`hamburger ${open}`}
+                 onClick={this.props.toggle}>
                 <span className="hamburger__middle"></span>
             </div>
         );
