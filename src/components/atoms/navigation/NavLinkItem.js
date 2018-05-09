@@ -12,6 +12,12 @@ class NavLinkItem extends React.Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (!this.props.active && nextProps.active) {
+      this.props.onSetindicatorPosition(nextProps.indicatorPosition);
+    }
+  }
+
   // True if component is the active element.
   get isActive() {
     return this.props.active;
@@ -28,7 +34,9 @@ class NavLinkItem extends React.Component {
   }
 
   handleMouseLeave = e => {
-    this.props.onSetindicatorPosition(this._positionBeforeHover);
+    if (!this.isActive) {
+      this.props.onSetindicatorPosition(this._positionBeforeHover);
+    }
   }
 
   changeRoute = () => {

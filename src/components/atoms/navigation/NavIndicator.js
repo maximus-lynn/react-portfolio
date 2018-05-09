@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './NavIndicator.css';
 
 export default class NavIndicator extends Component {
-
   render() {
 
     const { position } = this.props;

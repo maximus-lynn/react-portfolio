@@ -39,7 +39,7 @@ class Navigation extends React.Component {
 			<NavLinkItem 
 	    		to={route}
 	    		key={route}
-				active={route === window.location.pathname}
+				active={route === this.props.history.location.pathname}
 				toggle={this.props.toggle}
 				indicatorPosition={indicatorPosition}
 	    		onSetindicatorPosition={this.handleSetindicatorPosition}>
