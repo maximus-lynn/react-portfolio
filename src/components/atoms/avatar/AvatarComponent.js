@@ -14,7 +14,7 @@ class Avatar extends React.Component {
             avatarHtml = (
                 <NavLink to="/"
                          className="avatar--header">
-                    {/* <img className="avatar" src={avatarImg} alt="Maxwell Lynn"/> */}
+                    <img className="avatar" src={avatarImg} alt="Maxwell Lynn"/>
                 </NavLink>
             )
         }

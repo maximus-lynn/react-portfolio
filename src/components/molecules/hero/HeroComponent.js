@@ -16,7 +16,6 @@ const Hero = () => {
                 </header>
 
                 <Scroll></Scroll>
-
             </article>
         </section>
     );
